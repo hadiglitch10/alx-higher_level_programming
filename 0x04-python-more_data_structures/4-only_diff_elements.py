@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 
 def exclusive_elements(set_1, set_2):
-    return set_1.symmetric_difference(set_2)
+    return  set_1.difference(set_2).union(set_2.difference(set_1))
