@@ -2,6 +2,8 @@
 """
 Defines Rectangle class
 """
+
+
 class Rectangle:
     """ empty class """
     pass
