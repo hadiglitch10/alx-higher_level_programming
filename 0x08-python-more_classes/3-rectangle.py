@@ -59,6 +59,7 @@ class Rectangle:
         for i in range(self.__height):
             for j in range(self.__width):
                 rect += '#'
-            rect += '\n'
-        return rect[:-1]
+            if i < self.__height - 1:  # Add newline only if it's not the last row
+                  rect += '\n'
+        return rect
                 
