@@ -11,7 +11,6 @@ class Rectangle:
         self.height = height
         self.width = width
 
-
     @property
     def width(self):
         """ width getter """
@@ -40,7 +39,6 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         self.__height = value
 
-
     def area(self):
         """ calculates and returns area"""
         return self.__width * self.__height
@@ -59,7 +57,6 @@ class Rectangle:
         for i in range(self.__height):
             for j in range(self.__width):
                 rect += '#'
-            if i < self.__height - 1:  # Add newline only if it's not the last row
-                  rect += '\n'
+            if i < self.__height - 1:
+                rect += '\n'
         return rect
-                
