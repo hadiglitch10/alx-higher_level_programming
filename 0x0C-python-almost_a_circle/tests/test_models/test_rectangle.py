@@ -28,9 +28,9 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(r0.__str__(), "[Rectangle] (1) 0/0 - 1/2")
         self.assertEqual(r0.area(), 2)
         with contextlib.redirect_stdout(f):
-        	r0.display()
-        
+            r0.display()
         s = f.getvalue()
+
         output = '#\n#\n'
         self.assertEqual(s, output)
         output = {'x': 0, 'y': 0, 'id': 1, 'height': 2, 'width': 1}
