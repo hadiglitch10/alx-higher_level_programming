@@ -1,15 +1,12 @@
 #!/usr/bin/node
-const num = parseInt(process.argv[2]);
+const numb = process.argv[2];
 
-function factorial(n) {
-    if (isNaN(n)) {
-      return 1;
-    }
-    if (n <= 1) {
-      return 1;
-    }
-    return n * factorial(n - 1);
+function factorial (numb) {
+  if (numb <= 1 || isNaN(numb)) {
+    return 1;
+  } else {
+    return numb * factorial(numb - 1);
   }
-  
-console.log(factorial(num));
-  
+}
+
+console.log(factorial(numb));
